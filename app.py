@@ -13,7 +13,7 @@ def load_raw():
 
 @st.cache_data
 def load_cleaned():
-    return pd.read_csv("cars_cleaned.csv")
+    return pd.read_csv("Cars_cleaned.csv")
 
 raw = load_raw()
 clean = load_cleaned()
@@ -230,3 +230,4 @@ else:
              .corr()["Price"].sort_values(ascending=False).index[1])
 
     st.success("🎉 Thanks for visiting this Cars EDA Project 🚗")
+
